@@ -4,7 +4,7 @@ import stocks from "./stocks_up.jpeg";
 
 function App() {
   return (
-    <div className="App h-screen flex flex-col justify-center items-center">
+    <div className="App h-screen flex flex-col justify-center items-center bg-[url('https://cdn.pixabay.com/photo/2016/11/29/08/43/blank-1868502_1280.jpg')] bg-cover">
       <form autoComplete="Off">
         <div class="mb-6 object-center">
           <input
