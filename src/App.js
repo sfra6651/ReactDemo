@@ -4,32 +4,46 @@ import stocks from "./stocks_up.jpeg";
 
 function App() {
   return (
-    <div className="App h-screen flex flex-col justify-center items-center bg-[url('https://cdn.pixabay.com/photo/2016/11/29/08/43/blank-1868502_1280.jpg')] bg-cover">
-      <form autoComplete="Off">
-        <div class="mb-6 object-center">
+    <div>
+      <div className="h-40"></div>
+      <form class="mx-auto w-full max-w-xs bg-white border-4 border-blue-100 px-8 pt-6 pb-8 mb-4">
+        <div class="mb-4">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="username"
+          >
+            Name
+          </label>
           <input
-            type="name"
+            class="shadow appearance-none border-2 w-full py-2 px-3 text-gray-700 focus:outline-blue-200 focus:shadow-outline"
             id="name"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg px-5 py-2 hover:bg-gray-100"
+            type="text"
             placeholder="Name"
-            required
           />
         </div>
         <div class="mb-6">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="password"
+          >
+            Email
+          </label>
           <input
-            type="email"
+            class="shadow appearance-none border-2 w-full py-2 px-3 text-gray-700 mb-3 focus:outline-blue-200 focus:shadow-outline"
             id="email"
-            class="p3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg px-5 py-2 hover:bg-gray-100"
-            placeholder="Email"
-            required
+            type="email"
+            placeholder="name@example.com"
           />
+          <p class="text-red-500 text-xs italic">Placeholder</p>
         </div>
-        <button
-          type="submit"
-          class=" w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-        >
-          Submit
-        </button>
+        <div class="flex items-center justify-between">
+          <button
+            class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline"
+            type="button"
+          >
+            Submit
+          </button>
+        </div>
       </form>
     </div>
   );
